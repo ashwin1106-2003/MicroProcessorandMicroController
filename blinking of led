@@ -1,19 +1,19 @@
 #include <AT89S52.h>
 
-void delay(void);
+void wait(void);
 
 void main()
 {
  while(1)
  {
   P2_0=0;
-  delay();
+  wait();
   P2_0=1;
-  delay();
+  wait();
  }
 }
 
-void delay(void)
+void wait(void)
 {
  int i;
  for(i=0;i<100;i++)
